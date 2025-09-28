@@ -1,9 +1,37 @@
+// Trigger redeploy: test comment
 "use client";
 
 import { useState } from 'react';
 // Step 7 state (Extras) and all other code remain below
 // Helper to format the prompt for AI
-function buildConlangPrompt(answers: any) {
+type ConlangAnswers = {
+  startingPoint: string;
+  scriptType: string | null;
+  visualStyles: string[];
+  writingDirection: string | null;
+  pronounceEase: string | null;
+  consonantClusters: string | null;
+  vowelCount: string | null;
+  specialSounds: string[];
+  morphologyType: string | null;
+  wordFormation: string | null;
+  wordFeel: string[];
+  honorifics: string | null;
+  uniquePunctuation: string | null;
+  punctuationDesc: string;
+  wordOrder: string | null;
+  plurals: string | null;
+  gender: string | null;
+  tense: string | null;
+  caseMarking: string | null;
+  rootWordCount: string | null;
+  lexiconTopics: string[];
+  allowLoanwords: string | null;
+  loanwordSource: string;
+  safetyFilter: string | null;
+};
+
+function buildConlangPrompt(answers: ConlangAnswers) {
   return `Create a conlang with these features:\n${JSON.stringify(answers, null, 2)}`;
 }
 // Multi-step form entry point for conlang creation

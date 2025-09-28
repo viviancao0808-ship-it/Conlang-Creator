@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     } else {
       return NextResponse.json({ error: 'No result from Gemini.' }, { status: 500 });
     }
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: 'Error contacting Gemini.' }, { status: 500 });
   }
 }
