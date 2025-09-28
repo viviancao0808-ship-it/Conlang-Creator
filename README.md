@@ -23,7 +23,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## Contributors
 - [Vivian Cao](https://github.com/viviancao0808-ship-it)  
 - [Ellie Fu](https://github.com/elliefu168)  
-- [Partner’s Name](https://github.com/partner-username)  
+- [Minna Choi](https://github.com/minnachoi-star)  
 We collaborated on both frontend and backend development, as well as presentation and documentation.
 
 ## Learn More
